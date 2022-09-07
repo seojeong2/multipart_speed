@@ -17,14 +17,16 @@ client를 postman으로 요청할 경우
 [POST] http://~ /stt/srtweb
 ```
 semiRealTimeRequest: fileSendType(0 or 1), wavFilePath, serviceCode, callkey, txRxType, modelAuthKey, callbackUrl을 json 형태로 전송
-
-semiRealTimeRequest: {"fileSendType":"",
-                      "wavFilePath":"",
-                      "serviceCode":"",
-                      "callkey":"",
-                      "txRxType":"",
-                      "modelAuthKey":"",
-                      "callbackUrl":""}
+```
+- nas 처리시(fileSendType = 0)
+```
+semiRealTimeRequest: {"fileSendType":"0",
+                      "wavFilePath":"서버 음성파일 경로",
+                      "serviceCode":"서비스코드",
+                      "callkey":"콜 키",
+                      "txRxType":"txRxType",
+                      "modelAuthKey":"음성파일에 대한 md5값",
+                      "callbackUrl":"callback 처리할 url"}
 wavFile: 음성파일(fileSendType = 1 일때만 필수)
 ```
 
