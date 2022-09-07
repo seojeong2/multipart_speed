@@ -15,7 +15,6 @@ client를 postman으로 요청할 경우
 
 #### - stt 처리 요청
 [POST] http://~ /stt/srtweb
-Body > form-data로 전송
 ```
 semiRealTimeRequest: {"fileSendType":"",
                       "wavFilePath":"",
