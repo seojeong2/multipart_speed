@@ -35,7 +35,7 @@ public class CommonService {
         try {
             Process md5HashProcess = Runtime.getRuntime().exec(md5HashCommand);
             stdInput = new BufferedReader(new InputStreamReader(md5HashProcess.getInputStream()));
-            while((s = stdInput.readLine()) != null) {
+            while ((s = stdInput.readLine()) != null) {
                 md5Hash = s.split(" ")[0];
             }
             stdInput.close();
@@ -46,32 +46,42 @@ public class CommonService {
 
         log.info("md5Hash : " + md5Hash);
         return md5Hash;
-    };
+    }
 
-    public String saveMultipartFile(String _serviceCode, String _srtId, MultipartFile _multipartFile){
+    ;
+
+    public String saveMultipartFile(MultipartFile _multipartFile) {
         log.info("------------Call saveMultipartfile ----------");
-        log.info("ServiceCode : " + _serviceCode);
-        log.info("srtId : " + _srtId);
         log.info("_multipartFile name : " + _multipartFile.getOriginalFilename());
 
         String fileName = _multipartFile.getOriginalFilename();
         fileName = doAppendString(new String[]{
-                _srtId, "_", fileName
+                "test_", fileName
         });
 
-        String filePathWithServiceCode = "/Users/seojeong/src/svc/2/wav";
+        String filePathWithServiceCode = "/Users/seojeong/srt/svc/2/wav";
 
-        String filePathWithServiceCodeWithFileName =  doAppendString(new String[]{filePathWithServiceCode, File.separator, fileName});
+        String filePathWithServiceCodeWithFileName = doAppendString(new String[]{filePathWithServiceCode, File.separator, fileName});
 
         log.info("filePathWithServiceCodeWithFileName: " + filePathWithServiceCodeWithFileName);
 
-        try{
+        try {
             _multipartFile.transferTo(new File(filePathWithServiceCodeWithFileName));
-        }catch (IOException e){
+        } catch (IOException e) {
             log.info(e.getMessage());
         }
         return filePathWithServiceCodeWithFileName;
     }
 
+    public void removeFile(String _wavFilePath) {
+        log.info("------------Call Delete Violation File---------------");
+        log.info("wavFilepath : " + _wavFilePath);
 
+        File deleteFile = new File(_wavFilePath);
+        if (deleteFile.delete()) {
+            log.info("Deleted the wavFile : " + deleteFile.getName());
+        } else {
+            log.info("Deleted file Error !! ");
+        }
+    }
 }
