@@ -14,6 +14,7 @@ sh start.sh local
 client를 postman으로 요청할 경우
 
 #### - stt 처리 요청
+[POST] http://~ /stt/srtweb
 ```
 semiRealTimeRequest: {"fileSendType":"",
                       "wavFilePath":"",
@@ -23,4 +24,11 @@ semiRealTimeRequest: {"fileSendType":"",
                       "modelAuthKey":"",
                       "callbackUrl":""}
 wavFile: 음성파일(fileSendType = 1 일때만 필수)
+```
+
+#### - stt 처리 상태 초기화
+[GET} http:// ~ /stt/srtweb/status/reset?serviceCode=""&srtId=""
+```
+serviceCode = ""
+srtId = ""
 ```
