@@ -40,6 +40,6 @@ semiRealTimeRequest: {"fileSendType":"1",
                       "callbackUrl":"callback 처리할 url"}
 wavFile: 음성파일(fileSendType = 1 일때만 필수)
 ```
-#### - stt 처리 상태 초기화
-[GET] http:// ~ /stt/srtweb/status/reset?serviceCode=""&srtId=""
+#### - stt 처리 상태 조회
+[GET] http:// ~ /stt/srtweb/status?serviceCode=""&srtId=""
 
