@@ -15,7 +15,8 @@ client를 postman으로 요청할 경우
 
 #### - stt 처리 요청
 [POST] http://~ /stt/srtweb
-```
+```semiRealTimeRequest: fileSendType(0 or 1), wavFilePath, serviceCode, callkey, txRxType, modelAuthKey, callbackUrl을 json 형태로 전송
+
 semiRealTimeRequest: {"fileSendType":"",
                       "wavFilePath":"",
                       "serviceCode":"",
