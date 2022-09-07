@@ -23,7 +23,7 @@ Service > JNI에 있는 파일들 클래스 파일로 만들때, spring 관련�
 client를 postman으로 요청할 경우
 
 #### - stt 처리 요청
-[POST] http://~ /stt/srtweb
+[POST] http://125.159.61.195:55242/stt/srtweb
 ```
 semiRealTimeRequest: fileSendType(0 or 1), wavFilePath, serviceCode, callkey, txRxType, modelAuthKey, callbackUrl을 json 형태로 전송
 ```
@@ -50,7 +50,7 @@ semiRealTimeRequest: {"fileSendType":"1",
 wavFile: 음성파일(fileSendType = 1 일때만 필수)
 ```
 #### - stt 처리 상태 조회
-[GET] http:// ~ /stt/srtweb/status?serviceCode=""&srtId=""
+[GET] http://125.159.61.195:55242/stt/srtweb/status?serviceCode=""&srtId=""
 
 
 
