@@ -10,3 +10,11 @@ build/libs 위치에 생성된 jar 파일을 실행스크립트 위치로 이동
 ```
 sh start.sh local
 ```
+### 2. API 테스트 예시
+client를 postman으로 요청할 경우
+
+#### - stt 처리 요청
+```
+semiRealTimeRequest: {"fileSendType":"","wavFilePath":"","serviceCode":"","callkey","","txRxType":"","modelAuthKey":"","callbackUrl":""}
+wavFile: 음성파일(fileSendType = 1 일때만 필수)
+```
