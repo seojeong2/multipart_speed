@@ -15,6 +15,12 @@ client를 postman으로 요청할 경우
 
 #### - stt 처리 요청
 ```
-semiRealTimeRequest: {"fileSendType":"","wavFilePath":"","serviceCode":"","callkey","","txRxType":"","modelAuthKey":"","callbackUrl":""}
+semiRealTimeRequest: {"fileSendType":"",
+                      "wavFilePath":"",
+                      "serviceCode":"",
+                      "callkey","",
+                      "txRxType":"",
+                      "modelAuthKey":"",
+                      "callbackUrl":""}
 wavFile: 음성파일(fileSendType = 1 일때만 필수)
 ```
