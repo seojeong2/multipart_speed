@@ -2,12 +2,17 @@
 
 ### 1. 빌드 방법
 ```
+cd workspace/smp-semi-real-time-agent-sj
 ./gradlew build
 cd build/libs
 ```
 build/libs 위치에 생성된 jar 파일을 실행스크립트 위치로 이동
+```
+cp srt-agent-0.0.1-SNAPSHOT.jar ~/workspace/upload/
+```
 스크립트 실행(환경 적용 - local, dev)
 ```
+cd ~/workspace/upload
 sh start.sh local
 ```
 ### 2. API 테스트 예시
