@@ -19,7 +19,7 @@ client를 postman으로 요청할 경우
 semiRealTimeRequest: {"fileSendType":"",
                       "wavFilePath":"",
                       "serviceCode":"",
-                      "callkey","",
+                      "callkey":"",
                       "txRxType":"",
                       "modelAuthKey":"",
                       "callbackUrl":""}
