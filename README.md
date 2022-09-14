@@ -20,7 +20,10 @@ Service > JNI에 있는 파일들 클래스 파일로 만들때, spring 관련�
 - ScdpReqCallbackData 
   - lombok 어노테이션, import 부분 주석처리 
   - @Nullable 어노테이션, 관련 import 부분 주석처리 후
-  javac ScdpReqCallbackData.java
+```
+javac ScdpReqCallbackData.java
+```
+  
  
 
 
