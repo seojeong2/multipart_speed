@@ -17,6 +17,7 @@ sh start.sh local
 ```
 ### 2. 클래스 파일 생성시 주의사항
 Service > JNI에 있는 파일들 클래스 파일로 만들때, spring 관련한 것들 다 주석처리 후 javac 파일명
+
 - ScdpReqCallbackData.java 
   - lombok 어노테이션, import 부분 주석처리 
   - @Nullable 어노테이션, 관련 import 부분 주석처리 후
@@ -32,7 +33,17 @@ javac ScdpReqCallbackData.java
 javac ScdpReqData.java ScdpReqService.java
 ```
 - ScdpResService.java
-  - @Slf4j @Service
+  - @Slf4j @Service 어노테이션 주석처리
+  - import 부분 전체 주석처리
+  - 필드 부분 ScdpResService 부분 제외하고 전체 주석처리
+  - 생성자 주석처리
+  - getInstace() 메서드 안의 log 출력 부분 주석처리
+  - srtCallback() 메서드 안의 내용 전체 주석처리
+  - ScdpResService.java 파일 내에 ScdpReqCallbackData 사용 부분이 있어 컴파일 시 같이 처리해줘야함
+ ```
+ javac ScdpReqCallbackData.java ScdpResService.java
+ ```
+ 
 
 
 ### 3. API 테스트 예시
