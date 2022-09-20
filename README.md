@@ -56,7 +56,7 @@ client를 postman으로 요청할 경우
 #### - 준실시간 처리요청
 ![STT처리요청 drawio](https://user-images.githubusercontent.com/70994710/191179428-b7733b06-23fe-4586-8964-f75567f5ee8f.png)
 #### - 준실시간 처리상태 조회
-![stt처리상태조회2 drawio](https://user-images.githubusercontent.com/70994710/191180655-901c593e-763d-4032-b480-e32d78965d85.png)
+![stt처리상태조회3 drawio](https://user-images.githubusercontent.com/70994710/191181432-b7622671-a3d6-4d2e-82ce-cf9296628d76.png)
 
 
 
