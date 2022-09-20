@@ -53,8 +53,11 @@ client를 postman으로 요청할 경우
 [POST] http://125.159.61.195:55242/stt/srtweb
 
 ### 4. Sequence Diagram 
-#### 준실시간 처리요청
+#### - 준실시간 처리요청
 ![STT처리요청 drawio](https://user-images.githubusercontent.com/70994710/191179428-b7733b06-23fe-4586-8964-f75567f5ee8f.png)
+#### - 준실시간 처리상태 조회
+![stt처리상태조회 drawio](https://user-images.githubusercontent.com/70994710/191179838-5a7f0c94-0e72-43d3-b689-5f2c83182dcc.png)
+
 
 
 
