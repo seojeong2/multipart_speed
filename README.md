@@ -30,7 +30,7 @@ javac ScdpReqCallbackData.java
   - 라이브러리 여러개는 : 로 이어붙임
   ex) javac -cp 라이브러리1경로:라이브러리2경로 ScdpReqData.java
 ```
-javac -cp 롬복라이브러리 풀경로(ex. /Users/kimseojeong/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar) ScdpReqCallbackData.java
+javac -cp /Users/kimseojeong/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar ScdpReqCallbackData.java
 ```
 - ScdpReqService.java
   - @Service @Slf4j @PostConstruct 스프링 어노테이션, 관련 import 부분 주석처리
