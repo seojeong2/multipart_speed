@@ -60,8 +60,10 @@ client를 postman으로 요청할 경우
 [POST] http://125.159.61.195:55242/stt/srtweb
 
 ### 4. Sequence Diagram 
+#### - 준실시간 Agent-scdp 초기화
+![stt처리요청-초기화_v2 drawio](https://user-images.githubusercontent.com/70994710/193760575-1aa37e02-714f-454e-a1b8-a71d1f624cf4.png)
 #### - 준실시간 처리요청
-![STT처리요청 drawio](https://user-images.githubusercontent.com/70994710/191179428-b7733b06-23fe-4586-8964-f75567f5ee8f.png)
+![stt처리요청_ver3 drawio](https://user-images.githubusercontent.com/70994710/193760788-7d131734-9f60-469e-8876-22906ae53ba0.png)
 #### - 준실시간 처리상태 조회
 ![stt처리상태조회3 drawio](https://user-images.githubusercontent.com/70994710/191181432-b7622671-a3d6-4d2e-82ce-cf9296628d76.png)
 
